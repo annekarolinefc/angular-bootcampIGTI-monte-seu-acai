@@ -1,0 +1,52 @@
+<div class="titleSize">
+    <p>Tamanho</p>
+</div>
+<div>
+    <form>
+        <div class="300ml">
+            <input type="radio" id="300ml" class="300ml" [disabled]="tamanhoInicial" (change)="selecionarTamanho()"><label for="300ml">300 ml</label>
+        </div>
+        <div class="500ml">
+            <input type="radio" id="500ml" class="500ml" [disabled]="tamanhoInicial" (change)="selecionarTamanho()"><label for=" 500ml ">500 ml</label>
+        </div>
+    </form>
+</div>
+
+
+
+<div class="titleAdded ">
+    <p>Acréscimos <br> <small>Escolha até 3</small></p>
+
+</div>
+
+<form>
+    <div class="form-check ">
+        <input type="checkbox " id="leiteCondensado " [value]="1 " [disabled]="acrescimoMaximo" (change)="selecionarAcrescimo()">
+        <label for="leiteCondensado ">Leite Condensado</label>
+    </div>
+    <div class="form-check ">
+        <input type="checkbox " id="banana " [value]="2 " [disabled]="acrescimoMaximo" (change)="selecionarAcrescimo()">
+        <label for="banana ">Banana</label>
+    </div>
+    <div class="form-check ">
+        <input type="checkbox " id="granola " [value]="3 " [disabled]="acrescimoMaximo" (change)="selecionarAcrescimo()">
+        <label for="granola ">Granola</label>
+    </div>
+    <div class="form-check ">
+        <input type="checkbox " id="morango " [value]="4 " [disabled]="acrescimoMaximo" (change)="selecionarAcrescimo()">
+        <label for="morango ">Morango</label>
+    </div>
+    <div class="form-check ">
+        <input type="checkbox " id="leitePo " [value]="5 " [disabled]="acrescimoMaximo" (change)="selecionarAcrescimo()">
+        <label for="LeitePo ">Leite em pó</label>
+    </div>
+    <div class="form-check ">
+        <input type="checkbox " id="coco " [value]="6 " [disabled]="acrescimoMaximo" (change)="selecionarAcrescimo()">
+        <label for="coco ">Coco</label>
+    </div>
+    <div class="form-check ">
+        <input type="checkbox " id="castanhaCaju " [value]="7 " [disabled]="acrescimoMaximo" (change)="selecionarAcrescimo()">
+        <label for="castanhaCaju ">Castanha de Caju</label>
+    </div>
+
+</form>
