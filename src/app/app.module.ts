@@ -3,12 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { SelecaoComponentComponent } from './selecao-component/selecao-component.component';
+import { SelecaoComponent } from './selecao/selecao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SelecaoComponentComponent
+    SelecaoComponent
   ],
   imports: [
     BrowserModule,
